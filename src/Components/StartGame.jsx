@@ -1,45 +1,26 @@
-// import React from "react";
-
-// function StartGame({ toggle }) {
-//   return (
-//     <div className="w-full h-screen flex justify-center items-center  mt-5">
-//       <div className="w-[50%] h-[50%] flex shadow-lg ">
-//         <img className="" src="/images/dices.png" alt="" />
-//         <div className="p-3 items-center mt-7 ms-6">
-//           <h1 className="font-bold text-6xl p-3 mt-5">Dice Game</h1>
-//           <button
-//             onClick={toggle}
-//             className="bg-zinc-900 text-white px-8 py-2 ms-6 rounded  border hover:border-black hover:text-black hover:bg-gray-100 text-2xl"
-//           >
-//             Play Now
-//           </button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default StartGame;
-
-
-
 import React from "react";
 
 function StartGame({ toggle }) {
   return (
-    <div className="w-full h-screen flex justify-center items-center overflow-auto mt-5">
-      <div className="w-full md:w-[50%] h-[60%] flex flex-col md:flex-row shadow-lg">
+    <div className="w-full min-h-screen flex justify-center items-center p-4">
+      <div className="w-full max-w-5xl flex flex-col md:flex-row shadow-lg rounded overflow-hidden bg-white">
         {/* Dice Image */}
-        <img className="w-full md:w-[50%] object-cover" src="/images/dices.png" alt="Dice" />
-        
+        <div className="w-full md:w-1/2 h-64 md:h-auto">
+          <img
+            className="w-full h-full object-cover"
+            src="/images/dices.png"
+            alt="Dice"
+          />
+        </div>
+
         {/* Game Info Section */}
-        <div className="p-3 flex flex-col justify-center items-center md:items-start md:ml-6 mt-7">
-          <h1 className="font-bold text-4xl md:text-6xl p-3 mt-5 text-center md:text-left">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start p-6">
+          <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-center md:text-left mb-6">
             Dice Game
           </h1>
           <button
             onClick={toggle}
-            className="bg-zinc-900 text-white px-8 py-2 md:px-10 md:py-3 rounded border hover:border-black hover:text-black hover:bg-gray-100 text-2xl mt-4 "
+            className="bg-zinc-900 text-white px-6 py-3 md:px-8 md:py-4 text-xl md:text-2xl rounded border hover:border-black hover:text-black hover:bg-gray-100 transition"
           >
             Play Now
           </button>

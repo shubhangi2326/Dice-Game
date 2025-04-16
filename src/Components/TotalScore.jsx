@@ -1,18 +1,3 @@
-// import React from 'react'
-
-// const TotalScore = ({score}) => {
-//   return (
-//     <div>
-//       <div className='m-auto p-5 ms-6'>
-//       <h1 className='text-8xl font-bold'>{score}</h1>
-//       <p className='font-bold text-3xl'>Total Score</p>
-//     </div>
-//     </div>
-//   )
-// }
-
-// export default TotalScore
-
 import React from "react";
 
 const TotalScore = ({ score }) => {
